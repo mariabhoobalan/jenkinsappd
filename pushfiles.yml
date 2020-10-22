@@ -6,4 +6,5 @@
     file:
       path: /opt/AppD
       state: directory
+    become: yes
 

@@ -5,6 +5,24 @@
   - name: ansible create directory example
     file:
       path: /opt/AppD
-      state: directory
+      state: directoriy
+      owner: ec2-user
+      group: ec2-user
     become: yes
 
+  - name: new folder
+    file:
+      path: /opt/AppD/test
+      state: directory 
+      owner: ec2-user
+      group: ec2-user
+    become: yes
+
+  - name: link
+    file:
+      src: /opt/AppD/test
+      dest: /opt/AppD/testlink
+      owner: ec2-user
+      group: ec2-user
+      state: link
+    become: yes

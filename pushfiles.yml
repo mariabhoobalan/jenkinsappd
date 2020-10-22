@@ -1,0 +1,9 @@
+---
+
+- hosts: linux
+  tasks:
+  - name: ansible create directory example
+    file:
+      path: /opt/AppD
+      state: directory
+

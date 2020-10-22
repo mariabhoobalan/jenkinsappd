@@ -3,8 +3,8 @@
 [linux] 
 52.90.120.96
 
-[linux:vars]
-ansible_ssh_private_key_file=./pemkey.pem
+#[linux:vars]
+#ansible_ssh_private_key_file=./pemkey.pem
 
 [windows]
 34.203.189.117
